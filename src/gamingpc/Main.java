@@ -18,5 +18,12 @@ public class Main {
 
         System.out.println("Switching cooling system...");
         budgetPC.buildPC();
+
+        System.out.println();
+
+        budgetPC.setCoolingSystem(new HybridCooling());
+
+        System.out.println("Switching to hybrid cooling...");
+        budgetPC.buildPC();
     }
 }
